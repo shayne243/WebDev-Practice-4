@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Overpass');
+@import url('https://fonts.googleapis.com/css2?family=Overpass&family=Zilla+Slab');
+
 body {
     display: flex;
 }
@@ -11,6 +13,15 @@ body {
     text-align: center;
     padding: 20px;
     font-family: Overpass, sans-serif;
+}
+code {
+    display: block;
+    text-align: left;
+    background-color: #f7f7f7;
+    padding: 15px;
+    margin: 10px;
+    border-radius: 5px;
+    color: black;
 }
 #navbar {
     text-transform: uppercase;
@@ -36,9 +47,25 @@ body {
     align-content: center;
 }
 main {
+    font-family: Zilla Slab;
     margin-left: 390px;
     padding: 12px;
     color: white;
     background-color: darkblue;
     float: left;
+    border-radius: 20px;
+}
+main section {
+    padding-bottom: 15px;
+    margin-bottom: 10px;
+    border: yellow dashed;
+    border-width: 0.5px;
+    border-radius: 20px;
+    padding: 50px;
+}
+main section h1 {
+    text-transform: uppercase;
+}
+main section p {
+    font-size: 20px;
 }
