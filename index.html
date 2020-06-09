@@ -37,26 +37,36 @@
     </nav>
     <main id="main-doc">
         <section class="main-section" id="Introduction">
-            <h1>
-                Introduction
-            </h1>
+            <header>
+                <h1>
+                    Introduction
+                </h1>
+            </header>
             <p>
                 C is a general-purpose, procedural computer programming language supporting structured programming, lexical variable scope, and recursion, with a static type system. By design, C provides constructs that map efficiently to typical machine instructions.
             </p>
+            <img src="./images/c.png">
         </section>
-        <section class="main-section" id="C_vs_C++">
-            <h1>C vs C++</h1>
+        <section class="main-section" id="C_vs_C">
+            <header>
+                <h1>
+                    C vs C++
+                </h1>
+            </header>
             <p>
                 The Core Differences Between C and C++
             </p>
+            <img src="./images/C-vs-C.jpg">
             <p>
 C is a classic low-level procedural programming language while C++ is a superset of C that is both procedural and object-oriented. Both C and C++ are commonly used languages and though C++ is derived of C both languages need to be approached differently.
             </p>
         </section>
         <section class="main-section" id="Variables">
-            <h1>
-                Variables
-            </h1>
+            <header>
+                <h1>
+                    Variables
+                </h1>
+            </header>
             <p>
                 A variable is nothing but a name given to a storage area that our programs can manipulate. 
             </p>
@@ -74,9 +84,11 @@ C is a classic low-level procedural programming language while C++ is a superset
             </p>
         </section>
         <section class="main-section" id="Declaring_Variables">
-            <h1>
-                Declaring Variables
-            </h1>
+            <header>
+                <h1>
+                    Declaring Variables
+                </h1>
+            </header>
             <p>
                 A variable definition tells the compiler where and how much storage to create for the variable.
             </p>
@@ -104,170 +116,63 @@ C is a classic low-level procedural programming language while C++ is a superset
             </code>            
         </section>
         <section class="main-section" id="Variable_Names">
-            <h1>
-                Variable Names
-            </h1>
-            
+            <header>
+                <h1>
+                    Variable Names
+                </h1>
+            </header>
+            <p> 
+                In C, there are some rules to be followed while naming your variables. They are as follows:
+            </p>
+            <ol>
+                <li>Characters Allowed :
+                    <ul>
+                        <li>Underscore(_)</li>
+                        <li>Capital Letters ( A – Z )</li>
+                        <li>Small Letters ( a – z )</li>
+                        <li>Digits ( 0 – 9 )</li>
+                    </ul>
+                </li>
+                <li>Blanks & Commas are not allowed</li>
+                <li>No Special Symbols other than underscore(_) are allowed</li>
+                <li>First Character should be alphabet or Underscore</li>
+                <li>Variable name Should not be Reserved Word</li>
+            </ol>
+            <p>
+                Here are some examples of valid variable names:
+            </p>
+            <code>
+                num<br>Num<br>Num1<br>_NUM<br>NUM_temp2
+            </code>
+            <p>
+                Now, here are some examples of invalid variable names:
+            </p>
+            <code>
+                int //This is a reserved word<br>float //This is a reserved word<br>continue //This is a reserved word<br>break //This is a reserved word<br>1num<br>1_num<br>365_days<br>number 1<br>num 1<br>addition of program
+            </code>
+            <p>
+                In C, variable names are also case-sensitive
+            </p>
         </section>
         <section class="main-section" id="Data_Types">
-            <h1>
-                Data Types
-            </h1>
-            
+            <header>
+                <h1>
+                    Data Types
+                </h1>
+            </header>
+            <p>
+                Data types specify how we enter data into our programs and what type of data we enter. C language has some predefined set of data types to handle various kinds of data that we can use in our program. These datatypes have different storage capacities.
+            </p>
+            <p>
+                Data type determines the type of data a variable will hold. If a variable x is declared as int. it means x can hold only integer values. Every variable which is used in the program must be declared as what data-type it is.
+            </p>
+            <ul>
+                <li>char: The most basic data type in C. It stores a single character and requires a single byte of memory in almost all compilers.</li>
+                <li>int: As the name suggests, an int variable is used to store an integer.</li>
+                <li>float: It is used to store decimal numbers (numbers with floating point value) with single precision.</li>
+                <li>double: It is used to store decimal numbers (numbers with floating point value) with double precision.</li>
+            </ul>
         </section>
-        <p>
-            Search
-Search 6,000+ tutorials
-freeCodeCamp.org
-/news
-/forum
-/learn
-Responsive Web Design Projects - Build a Technical Documentation Page
-Objective: Build a CodePen.io app that is functionally similar to this: https://codepen.io/freeCodeCamp/full/NdrKKL.
-
-Fulfill the below user stories and get all of the tests to pass. Give it your own personal style.
-
-You can use HTML, JavaScript, and CSS to complete this project. Plain CSS is recommended because that is what the lessons have covered so far and you should get some practice with plain CSS. You can use Bootstrap or SASS if you choose. Additional technologies (just for example jQuery, React, Angular, or Vue) are not recommended for this project, and using them is at your own risk. Other projects will give you a chance to work with different technology stacks like React. We will accept and try to fix all issue reports that use the suggested technology stack for this project. Happy coding!
-
-User Story #1: I can see a main element with a corresponding id="main-doc", which contains the page's main content (technical documentation).
-
-User Story #2: Within the #main-doc element, I can see several section elements, each with a class of main-section. There should be a minimum of 5.
-
-User Story #3: The first element within each .main-section should be a header element which contains text that describes the topic of that section.
-
-User Story #4: Each section element with the class of main-section should also have an id that corresponds with the text of each header contained within it. Any spaces should be replaced with underscores (e.g. The section that contains the header "JavaScript and Java" should have a corresponding id="JavaScript_and_Java").
-
-User Story #5: The .main-section elements should contain at least 10 p elements total (not each).
-
-User Story #6: The .main-section elements should contain at least 5 code elements total (not each).
-
-User Story #7: The .main-section elements should contain at least 5 li items total (not each).
-
-User Story #8: I can see a nav element with a corresponding id="navbar".
-
-User Story #9: The navbar element should contain one header element which contains text that describes the topic of the technical documentation.
-
-User Story #10: Additionally, the navbar should contain link (a) elements with the class of nav-link. There should be one for every element with the class main-section.
-
-User Story #11: The header element in the navbar must come before any link (a) elements in the navbar.
-
-User Story #12: Each element with the class of nav-link should contain text that corresponds to the header text within each section (e.g. if you have a "Hello world" section/header, your navbar should have an element which contains the text "Hello world").
-
-User Story #13: When I click on a navbar element, the page should navigate to the corresponding section of the main-doc element (e.g. If I click on a nav-link element that contains the text "Hello world", the page navigates to a section element that has that id and contains the corresponding header.
-
-User Story #14: On regular sized devices (laptops, desktops), the element with id="navbar" should be shown on the left side of the screen and should always be visible to the user.
-
-User Story #15: My Technical Documentation page should use at least one media query.
-
-You can build your project by forking this CodePen pen. Or you can use this CDN link to run the tests in any environment you like: https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js
-
-Once you're done, submit the URL to your working project with all its tests passing.
-
-Solution
-Link, ex: https://codepen.io/camperbot/full/oNvPqqo
-
-Navigated to Responsive Web Design Projects - Build a Technical Documentation Page | Learn | freeCodeCamp.org   Search
-Search 6,000+ tutorials
-freeCodeCamp.org
-/news
-/forum
-/learn
-Responsive Web Design Projects - Build a Technical Documentation Page
-Objective: Build a CodePen.io app that is functionally similar to this: https://codepen.io/freeCodeCamp/full/NdrKKL.
-
-Fulfill the below user stories and get all of the tests to pass. Give it your own personal style.
-
-You can use HTML, JavaScript, and CSS to complete this project. Plain CSS is recommended because that is what the lessons have covered so far and you should get some practice with plain CSS. You can use Bootstrap or SASS if you choose. Additional technologies (just for example jQuery, React, Angular, or Vue) are not recommended for this project, and using them is at your own risk. Other projects will give you a chance to work with different technology stacks like React. We will accept and try to fix all issue reports that use the suggested technology stack for this project. Happy coding!
-
-User Story #1: I can see a main element with a corresponding id="main-doc", which contains the page's main content (technical documentation).
-
-User Story #2: Within the #main-doc element, I can see several section elements, each with a class of main-section. There should be a minimum of 5.
-
-User Story #3: The first element within each .main-section should be a header element which contains text that describes the topic of that section.
-
-User Story #4: Each section element with the class of main-section should also have an id that corresponds with the text of each header contained within it. Any spaces should be replaced with underscores (e.g. The section that contains the header "JavaScript and Java" should have a corresponding id="JavaScript_and_Java").
-
-User Story #5: The .main-section elements should contain at least 10 p elements total (not each).
-
-User Story #6: The .main-section elements should contain at least 5 code elements total (not each).
-
-User Story #7: The .main-section elements should contain at least 5 li items total (not each).
-
-User Story #8: I can see a nav element with a corresponding id="navbar".
-
-User Story #9: The navbar element should contain one header element which contains text that describes the topic of the technical documentation.
-
-User Story #10: Additionally, the navbar should contain link (a) elements with the class of nav-link. There should be one for every element with the class main-section.
-
-User Story #11: The header element in the navbar must come before any link (a) elements in the navbar.
-
-User Story #12: Each element with the class of nav-link should contain text that corresponds to the header text within each section (e.g. if you have a "Hello world" section/header, your navbar should have an element which contains the text "Hello world").
-
-User Story #13: When I click on a navbar element, the page should navigate to the corresponding section of the main-doc element (e.g. If I click on a nav-link element that contains the text "Hello world", the page navigates to a section element that has that id and contains the corresponding header.
-
-User Story #14: On regular sized devices (laptops, desktops), the element with id="navbar" should be shown on the left side of the screen and should always be visible to the user.
-
-User Story #15: My Technical Documentation page should use at least one media query.
-
-You can build your project by forking this CodePen pen. Or you can use this CDN link to run the tests in any environment you like: https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js
-
-Once you're done, submit the URL to your working project with all its tests passing.
-
-Solution
-Link, ex: https://codepen.io/camperbot/full/oNvPqqo
-
-Navigated to Responsive Web Design Projects - Build a Technical Documentation Page | Learn | freeCodeCamp.orgSearch
-Search 6,000+ tutorials
-freeCodeCamp.org
-/news
-/forum
-/learn
-Responsive Web Design Projects - Build a Technical Documentation Page
-Objective: Build a CodePen.io app that is functionally similar to this: https://codepen.io/freeCodeCamp/full/NdrKKL.
-
-Fulfill the below user stories and get all of the tests to pass. Give it your own personal style.
-
-You can use HTML, JavaScript, and CSS to complete this project. Plain CSS is recommended because that is what the lessons have covered so far and you should get some practice with plain CSS. You can use Bootstrap or SASS if you choose. Additional technologies (just for example jQuery, React, Angular, or Vue) are not recommended for this project, and using them is at your own risk. Other projects will give you a chance to work with different technology stacks like React. We will accept and try to fix all issue reports that use the suggested technology stack for this project. Happy coding!
-
-User Story #1: I can see a main element with a corresponding id="main-doc", which contains the page's main content (technical documentation).
-
-User Story #2: Within the #main-doc element, I can see several section elements, each with a class of main-section. There should be a minimum of 5.
-
-User Story #3: The first element within each .main-section should be a header element which contains text that describes the topic of that section.
-
-User Story #4: Each section element with the class of main-section should also have an id that corresponds with the text of each header contained within it. Any spaces should be replaced with underscores (e.g. The section that contains the header "JavaScript and Java" should have a corresponding id="JavaScript_and_Java").
-
-User Story #5: The .main-section elements should contain at least 10 p elements total (not each).
-
-User Story #6: The .main-section elements should contain at least 5 code elements total (not each).
-
-User Story #7: The .main-section elements should contain at least 5 li items total (not each).
-
-User Story #8: I can see a nav element with a corresponding id="navbar".
-
-User Story #9: The navbar element should contain one header element which contains text that describes the topic of the technical documentation.
-
-User Story #10: Additionally, the navbar should contain link (a) elements with the class of nav-link. There should be one for every element with the class main-section.
-
-User Story #11: The header element in the navbar must come before any link (a) elements in the navbar.
-
-User Story #12: Each element with the class of nav-link should contain text that corresponds to the header text within each section (e.g. if you have a "Hello world" section/header, your navbar should have an element which contains the text "Hello world").
-
-User Story #13: When I click on a navbar element, the page should navigate to the corresponding section of the main-doc element (e.g. If I click on a nav-link element that contains the text "Hello world", the page navigates to a section element that has that id and contains the corresponding header.
-
-User Story #14: On regular sized devices (laptops, desktops), the element with id="navbar" should be shown on the left side of the screen and should always be visible to the user.
-
-User Story #15: My Technical Documentation page should use at least one media query.
-
-You can build your project by forking this CodePen pen. Or you can use this CDN link to run the tests in any environment you like: https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js
-
-Once you're done, submit the URL to your working project with all its tests passing.
-
-Solution
-Link, ex: https://codepen.io/camperbot/full/oNvPqqo
-
-Navigated to Responsive Web Design Projects - Build a Technical Documentation Page | Learn | freeCodeCamp.org
-        </p>
     </main>    
 </body>
 </html>
